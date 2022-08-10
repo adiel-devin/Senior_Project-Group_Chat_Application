@@ -41,9 +41,3 @@ Under src/main/java/com/dev/chatclient/userInfo/* contains classes that store a 
 # Utils
 
 Under src/main/java/com/dev/chatclient/utils/* contains other utilities classes that mostly contains static methods. They usually perform more complex queries, parse user input, or perform encryption. 
-
-
-
-
-
-
