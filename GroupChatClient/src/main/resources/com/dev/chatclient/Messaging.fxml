@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="566.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fx:id="title" layoutX="249.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Group Messaging" textAlignment="CENTER" wrappingWidth="382.21630859375">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Text>
+      <Button layoutX="109.0" layoutY="484.0" mnemonicParsing="false" onAction="#sendMessageButton" text="Send Message" />
+      <TextField fx:id="messageText" layoutX="231.0" layoutY="484.0" prefHeight="25.0" prefWidth="572.0" />
+      <Button layoutX="672.0" layoutY="128.0" mnemonicParsing="false" onAction="#leaveGroupButton" text="Leave Group" />
+      <ListView fx:id="messagingList" layoutX="51.0" layoutY="78.0" prefHeight="376.0" prefWidth="529.0" />
+      <Button layoutX="672.0" layoutY="78.0" mnemonicParsing="false" onAction="#refreshButton" prefHeight="25.0" prefWidth="88.0" text="Refresh" />
+      <Text layoutX="700.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Users" />
+      <ListView fx:id="usersList" layoutX="616.0" layoutY="242.0" prefHeight="153.0" prefWidth="200.0" />
+      <Button layoutX="642.0" layoutY="417.0" mnemonicParsing="false" onAction="#sendDirectMessage" prefHeight="25.0" prefWidth="147.0" text="Send Direct Message" />
+      <Text fx:id="redFlagText" fill="RED" layoutX="428.0" layoutY="539.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+   </children>
+</AnchorPane>

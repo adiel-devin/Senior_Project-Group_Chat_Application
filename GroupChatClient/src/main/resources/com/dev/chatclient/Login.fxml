@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dev.chatclient.controllers.LoginController">
+   <children>
+      <Label layoutX="133.0" layoutY="55.0" text="Group Chat Application">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="registerButton" layoutX="61.0" layoutY="270.0" mnemonicParsing="false" onAction="#registerAuthentication" text="Register">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="usernameInput" layoutX="170.0" layoutY="121.0" />
+      <Label layoutX="76.0" layoutY="125.0" text="Username" />
+      <Label layoutX="78.0" layoutY="180.0" text="Password" />
+      <PasswordField fx:id="passwordInput" layoutX="170.0" layoutY="185.0" />
+      <Button fx:id="loginButton" layoutX="182.0" layoutY="244.0" mnemonicParsing="false" onAction="#loginAuthentication" prefHeight="87.0" prefWidth="138.0" text="Login">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="blankLabel" layoutX="221.0" layoutY="346.0" textFill="RED" />
+   </children>
+</AnchorPane>

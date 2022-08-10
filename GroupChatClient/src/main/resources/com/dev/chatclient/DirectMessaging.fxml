@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ListView fx:id="messagesList" layoutX="46.0" layoutY="72.0" prefHeight="308.0" prefWidth="578.0" />
+      <Text fx:id="titleText" layoutX="68.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Messaging with: " textAlignment="CENTER" wrappingWidth="343.9111328125">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Button layoutX="647.0" layoutY="86.0" mnemonicParsing="false" onAction="#refreshButton" text="Refresh" />
+      <Button layoutX="647.0" layoutY="149.0" mnemonicParsing="false" onAction="#leaveButton" prefHeight="25.0" prefWidth="61.0" text="Leave" />
+      <Button layoutX="46.0" layoutY="404.0" mnemonicParsing="false" onAction="#sendMessageButton" text="Send Message" />
+      <TextField fx:id="messageField" layoutX="182.0" layoutY="404.0" prefHeight="25.0" prefWidth="416.0" />
+   </children>
+</AnchorPane>
