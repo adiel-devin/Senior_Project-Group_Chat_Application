@@ -6,12 +6,14 @@ This project was my submission for my CSUDH senior project. The project is a gro
 
 This applications requires a MySql database to work. I included the GroupChatSQLDump.sql file that if ran as a query in MySql workbench, it will creates the Sql database named "groupchat database" which includes six tables: chatgroup, person, persons_in_chatgroup, chatlog, dm, directmessaging. Then under src/main/java/com/dev/chatclient/jdbcTools/DBConnection.java, you can modify the url, username, password to your database.
 Entity Relational Diagram below:
+
 ![image](https://user-images.githubusercontent.com/47425401/183830210-4ff9a45d-724c-4991-a7a0-7b3fa40c82c8.png)
 
 # GroupChatClient
 
 GroupChatClient folders is the client application which acts as the GUI, single user manager, and runs queries on the database. This was tested on two separate desktops in with different IP's connected to a Microsoft Azure MySQL cloud database and both where able to create groups and message one another simultaneously. Although some disconnection issues where found which is more notable when multiply queries are ran at once.
 Below are screenshot of the GUI:
+
 ![image](https://user-images.githubusercontent.com/47425401/183830645-26d3d8aa-1178-44e8-bd9e-82dc45480a0b.png)
 ![image](https://user-images.githubusercontent.com/47425401/183830711-f55226af-a00a-41f0-8ea5-1670ce2eb5e0.png)
 ![image](https://user-images.githubusercontent.com/47425401/183830769-43c04ec1-e3ad-49d3-9bcc-5c992793d82d.png)
